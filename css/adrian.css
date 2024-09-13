@@ -11,7 +11,7 @@
 
 body {
     display: flex;
-    background-color: rgb(56, 52, 97);
+    background-color: rgb(48, 48, 48);
 }
 
 .container {
@@ -41,13 +41,13 @@ li {
 }
 
 a:hover {
-    color:rgb(211, 108, 71);
+    color:rgb(56, 52, 97);
     font-weight: 300;
 }
 
 .home {
     font-weight: 700;
-    color:rgb(211, 108, 71);
+    color:rgb(56, 52, 97);
 
 }
 
@@ -83,7 +83,7 @@ main {
 
 h1 {
     text-align: center;
-    color:rgb(255, 208, 190);
+    color:rgb(56, 52, 97);
     font-family: "Tomorrow", sans-serif;
 
 }
