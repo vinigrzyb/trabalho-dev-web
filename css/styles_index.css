@@ -139,20 +139,64 @@ body {
     padding-bottom: 50px;
 }
 
+.card {
+    position: relative; /* Adicionado para manter elementos posicionados corretamente */
+    border-top: 35px;
+    width: 180px;
+    height: 230px; /* Aumentado para acomodar o nome e cargo */
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.5s ease;
+}
+
+.card img {
+    width: 100px; /* Define o tamanho da imagem */
+    height: 100px;
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem fique ajustada sem distorção */
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+}
+
 .card a {
-    color: #8d8886;
-    font-size: 40px;
-    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
     font-weight: bold;
+    color: #333;
     text-decoration: none;
-    display: block;
+    text-align: center;
+    margin: 5px 0;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .card .role {
-    color: #6c6b6a;
-    font-size: 20px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
     font-family: "Josefin Sans", sans-serif;
-    font-weight: normal;
-    margin-top: 5px;
-    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.card .edit-btn {
+    margin-top: auto; /* Empurra o botão para a parte inferior do card */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.card .edit-btn:hover {
+    background-color: #ddd;
 }

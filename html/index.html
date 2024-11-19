@@ -17,7 +17,7 @@
 </div>
 
 <div class="card-container">
-    <div class="card" style="background-image: url('../assets/Adrian.jpg');">
+    <!-- <div class="card" style="background-image: url('../assets/Adrian.jpg');">
         <a href="./adrian.html">Adrian</a>
     </div>
     <div class="card" style="background-image: url('../assets/alaertes_icon.png');">
@@ -34,9 +34,9 @@
     </div>
     <div class="card" style="background-image: url('../assets/vinicius.png');">
         <a href="./vinicius.html">Vinicius</a>
-    </div>
+    </div> -->
 </div>
-  <!-- Modal -->
+  <!-- modal de criação de card -->
   <div id="userModal" class="modal">
     <div class="modal-content">
         <h2>Adicionar Usuário</h2>
@@ -53,6 +53,28 @@
             <div class="modal-buttons">
                 <button type="button" id="cancelBtn">Cancelar</button>
                 <button type="submit" id="saveBtn">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- modal de edição de card -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <h2>Editar Usuário</h2>
+        <form id="editForm">
+            <label for="editName">Nome:</label>
+            <input type="text" id="editName" name="name" required>
+
+            <label for="editRole">Cargo:</label>
+            <input type="text" id="editRole" name="role" required>
+
+            <label for="editPhoto">Foto:</label>
+            <input type="file" id="editPhoto" name="photo" accept="image/*">
+
+            <div class="modal-buttons">
+                <button type="button" id="cancelEditBtn">Cancelar</button>
+                <button type="submit" id="saveEditBtn">Salvar</button>
+                <button type="button" id="deleteBtn">Excluir</button>
             </div>
         </form>
     </div>
